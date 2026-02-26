@@ -39,7 +39,9 @@ This project is a real-time Sales CRM web application built for the Bloc Foundin
    ```bash
    npm run dev
    ```
-   Open [http://localhost:3000](http://localhost:3000) in your browser.
+   - Open [http://localhost:3000](http://localhost:3000) for the Dashboard.
+   - Open [http://localhost:3000/api-docs](http://localhost:3000/api-docs) for the **Interactive API Documentation (Swagger)**.
+
 
 ---
 
