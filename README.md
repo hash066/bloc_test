@@ -62,7 +62,7 @@ The automation begins when a new row is added to a designated Google Sheet.
 
 ```mermaid
 graph TD
-    A[Google Sheets] -->|New Row| B[Automation Tool: n8n/Zapier/Make]
+    A[Google Sheets] -->|New Row| B[Automation Tool: n8n]
     B -->|POST Webhook| C[Next.js API: /api/leads/webhook]
     subgraph "Next.js Backend"
         C -->|1. Validate & Create Lead| D[Supabase Database]
