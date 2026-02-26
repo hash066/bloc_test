@@ -60,6 +60,20 @@ The automation begins when a new row is added to a designated Google Sheet.
 
 ## 🧠 System Architecture & Database Logic
 
+```mermaid
+graph TD
+    A[Google Sheets] -->|New Row| B[Automation Tool: n8n/Zapier/Make]
+    B -->|POST Webhook| C[Next.js API: /api/leads/webhook]
+    subgraph "Next.js Backend"
+        C -->|1. Validate & Create Lead| D[Supabase Database]
+        C -->|2. Trigger Assignment| E[lib/assignLead.ts]
+        E -->|Check Capacity/Round-Robin| D
+        E -->|Update Assignment| D
+    end
+    D -->|Supabase Realtime| F[Next.js Frontend Dashboard]
+```
+
+
 ### Development Logic
 The assignment logic (`lib/assignLead.ts`) operates on every new lead insertion:
 1. **State Matching**: Finds all active callers whose `assigned_states` array contains the lead's state.
