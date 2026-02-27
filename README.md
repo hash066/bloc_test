@@ -3,9 +3,9 @@
 This project is a real-time Sales CRM web application built for the Bloc Founding AI & Automation Developer Assignment. It handles automated lead ingestion from Google Sheets, real-time UI synchronization, and smart round-robin lead assignment based on caller availability, daily limits, and regional state assignments.
 
 ## 🔗 Submission Links
-- **Live Deployment:** [](https://bloc-test-e4q4.vercel.app/leads)]
-- **Google Sheets (Test Leads):** [[](https://docs.google.com/spreadsheets/d/1S0RYoyddqW-gN4OfeIjAL7wdOrNWjvcrH9RwJ__X1po/edit?usp=sharing)]
-- **Video Demo:** [[](https://drive.google.com/drive/folders/1p0S0avCUvjGW_wKm9FF3fQbIE2ZqVNKR?usp=sharing)]
+- **Live Deployment:** [(https://bloc-test-e4q4.vercel.app/leads)]]
+- **Google Sheets (Test Leads):** [[https://docs.google.com/spreadsheets/d/1S0RYoyddqW-gN4OfeIjAL7wdOrNWjvcrH9RwJ__X1po/edit?usp=sharing)](]
+- **Video Demo:** [[(https://drive.google.com/drive/folders/1p0S0avCUvjGW_wKm9FF3fQbIE2ZqVNKR?usp=sharing)]]
 
 ## 🚀 Setup Instructions
 
