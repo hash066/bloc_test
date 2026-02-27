@@ -3,9 +3,9 @@
 This project is a real-time Sales CRM web application built for the Bloc Founding AI & Automation Developer Assignment. It handles automated lead ingestion from Google Sheets, real-time UI synchronization, and smart round-robin lead assignment based on caller availability, daily limits, and regional state assignments.
 
 ## 🔗 Submission Links
-- **Live Deployment:** [Insert Vercel/Netlify Link Here]
-- **Google Sheets (Test Leads):** [Insert Google Sheets Link Here]
-- **Video Demo:** [Insert Google Drive Video Link Here]
+- **Live Deployment:** [](https://bloc-test-e4q4.vercel.app/leads)]
+- **Google Sheets (Test Leads):** [[](https://docs.google.com/spreadsheets/d/1S0RYoyddqW-gN4OfeIjAL7wdOrNWjvcrH9RwJ__X1po/edit?usp=sharing)]
+- **Video Demo:** [[](https://drive.google.com/drive/folders/1p0S0avCUvjGW_wKm9FF3fQbIE2ZqVNKR?usp=sharing)]
 
 ## 🚀 Setup Instructions
 
@@ -54,9 +54,6 @@ The automation begins when a new row is added to a designated Google Sheet.
 3. It makes a `POST` request to the Next.js API route (`/api/leads/webhook`) with the payload and a secure `x-hook-key` header matching the `WEBHOOK_SECRET`.
 4. The backend securely verifies the request, checks for duplicate phone numbers, inserts the lead into Supabase, and triggers the Round Robin assignment logic. Supabase Realtime then instantly pushes the new lead to the frontend UI without requiring a refresh.
 
-### Automation Screenshot
-*(Add your n8n / Zapier / Make screenshot here)*
-![Automation Workflow Screenshot](./screenshot.png)
 
 ---
 
