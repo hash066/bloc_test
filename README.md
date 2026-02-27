@@ -55,8 +55,7 @@ The automation begins when a new row is added to a designated Google Sheet.
 4. The backend securely verifies the request, checks for duplicate phone numbers, inserts the lead into Supabase, and triggers the Round Robin assignment logic. Supabase Realtime then instantly pushes the new lead to the frontend UI without requiring a refresh.
 
 ### Automation Screenshot
-*(Add your n8n / Zapier / Make screenshot here)*
-![Automation Workflow Screenshot](./screenshot.png)
+![Automation Workflow Screenshot](./workflow.png)
 
 ---
 
